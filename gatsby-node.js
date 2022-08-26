@@ -2,7 +2,7 @@ const path = require('path')
 
 
 module.exports.createPages = async ({ graphql, actions }) => {
-    const { createPage } = actions
+    const { createPage, createRedirect } = actions
     const blogTemplate = path.resolve('./src/templates/blog.js')
     const res = await graphql(`
     query {
@@ -15,6 +15,13 @@ module.exports.createPages = async ({ graphql, actions }) => {
          }
        }
        }`)
+
+       createRedirect({
+        fromPath: '/',
+        toPath: '/Index',
+        isPermanent: true,
+        redirectInBrowser: true,
+     })
 
        res.data.allContentfulBlogPost.edges.forEach((edge) => {
         createPage({
