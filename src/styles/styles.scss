@@ -1,5 +1,60 @@
-$green: green;
+body {
+    background-image: url('../images/pic01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-* {
-    color: $green
+
+.outermainbox {
+    background-image: url('../images/pic03.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 600px;
+    top: 50%;
+}
+
+.mainbox {
+    padding: 2.5rem;
+   margin: 0;
+   position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.outerintrobox {
+    padding: 15%
+}
+
+.innerintrobox {
+    padding: 5%
+}
+
+.contactdiv {
+    background-image: url('../images/pic15.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 600px;
+    top: 50%;
+    text-align: center;
+}
+
+.contactbutton {
+    margin: auto !important;
+    position: fixed !important;
+    display: flex !important;
+    text-align: center !important
+}
+
+.innercontactbox {
+    padding: 2.5rem;
+   margin: 0;
+   min-width: 100%;
+   position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }

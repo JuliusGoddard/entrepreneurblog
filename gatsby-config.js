@@ -1,9 +1,11 @@
 module.exports = {
  siteMetadata: {
- title: 'Full-Stack Bootcamp',
+ title: 'Mendeleev Institute',
  author: 'Julius Goddard'
  },
   plugins: [
+    'gatsby-plugin-fontawesome-css',
+    'gatsby-plugin-postcss',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-image',
     {

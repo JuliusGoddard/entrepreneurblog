@@ -1,3 +1,8 @@
+.titleHeader {
+    font-size: 4rem;
+    color: white;
+}
+
 .link {
     color: #999999;
 }
@@ -9,14 +14,15 @@
 }
 
 .navList { 
-    display: flex;
+    display: flex !important;
     list-style-type: none;
     margin: 0;
+    margin-bottom: 10px;
 }
 
 .navItem {
-    color: #999999;
-    font-size: .9rem;
+    color: lightseagreen;
+    font-size: 1.3rem;
     margin-right: 1.3rem;
     text-decoration: none;
 }
@@ -27,4 +33,8 @@
 
 .activenavitem {
     color: #333333
+}
+
+.navstyle {
+    background-color: stonewhite;
 }

@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
+import Nav from 'react-bootstrap/Nav';
+import '../styles/styles.scss'
 
 import * as headerStyles from './header.module.scss'
  
@@ -16,17 +18,20 @@ const Header = () => {
     `)
 
     return (
+    
         <div>
-        <h1>{data.site.siteMetadata.title}</h1>
-        <nav>
+        <Nav variant="pills" defaultActiveKey="/home" className='justify-content-end'>
             <ul className={headerStyles.navList}>
-        <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/Index">Home</Link></li>
-        <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/about">About</Link></li>
-        <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/blog">Blog</Link></li>
-        <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/Contact">Contact</Link></li>
+       <Nav.Item> <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/Index">Home</Link></li></Nav.Item>
+        <Nav.Item><li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/about">About</Link></li></Nav.Item>
+        <Nav.Item><li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/blog">Blog</Link></li></Nav.Item>
+        <Nav.Item><li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/Contact">Contact</Link></li></Nav.Item>
         </ul>
-        </nav>
-        </div>
+        </Nav>
+
+
+</div>
+  
     )
 }
 
