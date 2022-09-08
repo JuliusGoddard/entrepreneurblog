@@ -58,3 +58,36 @@ body {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+
+.blogtitlediv {
+    background-image: url('../images/pic15.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 200px;
+    top: 50%;
+    text-align: center;
+
+}
+
+.blogtitlebutton {
+    margin: auto !important;
+    position: fixed !important;
+    display: flex !important;
+    text-align: center !important
+}
+
+.innerblogtitlebox {
+    padding: 100px !important;
+   margin: 0;
+   min-width: 100%;
+   position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.date {
+    padding-right: 10px !important;
+    margin-right: 10px !important;
+}
