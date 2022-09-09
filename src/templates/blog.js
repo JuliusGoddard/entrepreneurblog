@@ -7,19 +7,7 @@ import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Head from '../components/head'
 import '../styles/global.css'
-
-/* export const query = graphql`
-query($slug: String!) {
-    markdownRemark(fields: { slug: {eq: $slug }}) {
-        frontmatter {
-            title
-            date
-        }
-        html
-    }
-}
-`
-*/
+import * as blogStyles from './blog.module.scss'
 
 export const query = graphql`
 query($slug: String!) {
@@ -42,6 +30,8 @@ query($slug: String!) {
 }`
 
 const Blog = (props) => {
+
+
     const options = {
         renderNode: {
             "embedded-asset-block": (node) => {
@@ -59,6 +49,7 @@ const Blog = (props) => {
 
     return (
 <Layout>
+    <article>
     <Head title={props.data.contentfulBlogPost.title} />
     <div className="blogtitlediv">
         <div className="innerblogtitlebox">
@@ -67,7 +58,7 @@ const Blog = (props) => {
     </div>
    
    <div class="container py-8 px-8">
-   <div class="my-10">
+   <div class="my-10 text-2xl py-10" className={blogStyles.contentStyles}>
     {documentToReactComponents(JSON.parse(props.data.contentfulBlogPost.body.raw), options)
     &&
     renderRichText(
@@ -76,6 +67,7 @@ const Blog = (props) => {
      <p className="date" class="flex flex-row-reverse italic py-6 mx-8">{props.data.contentfulBlogPost.publishedDate}</p>
      </div>
      </div>
+     </article>
 </Layout>
     )
 }
