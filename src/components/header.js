@@ -29,8 +29,7 @@ const Header = () => {
         </ul>
         </Nav>
 
-
-</div>
+     </div>
   
     )
 }

@@ -34,11 +34,11 @@ const Contact = () => {
           
 </div>
 </div>
-<div class="container px-10 py-6 bg-white min-w-full">
+<div class="  container px-10 py-6 bg-white min-w-full">
     <h1 class="font-bold text-5xl">Get in Touch</h1>
     <hr style={hrstyle} />
 <p class="py-4">The Mendeleev Institute is always open to consultations and new collaborators</p>
-          <div class="flex flex-row py-10 px-10 grid md:grid-cols-2 items-center shadow-2xl">
+          <div class="transition ease-in-out delay-250 flex flex-row py-10 px-10 grid md:grid-cols-2 items-center shadow-2xl hover:-translate-y-1 hover:scale-110">
             <div><img src={pic24}></img></div>
             <div>
                 <h2 class="font-bold text-2xl py-4">Contact Us</h2>

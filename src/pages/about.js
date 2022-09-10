@@ -59,20 +59,20 @@ const About = () => {
     <h1 class="font-bold text-5xl text-center">How we can help you</h1>
     
 <div class="flex flex-row grid md:grid-cols-3 gap-4 h-full py-10">
-  <div class="shadow-2xl px-10">
+  <div class="transition ease-in-out delay-250 shadow-2xl px-10 hover:-translate-y-1 hover:scale-110 hover:bg-blue-100">
    
     <img src={pic21} class="py-5"  alt="ss"></img>
     <h2 class="text-center text-lg font-bold">Project Management</h2>
   <p class="text-center my-10">Our teaching will give you a fundamental skillset required to start your own firm</p>
   </div>
-  <div class="shadow-2xl px-10">
+  <div class="transition ease-in-out delay-250 shadow-2xl px-10 hover:-translate-y-1 hover:scale-110 hover:bg-blue-100">
 
   
     <img src={pic22} class="py-5" alt="ss"></img>
     <h2 class="text-center text-lg font-bold">Regulatory Assistance</h2>
   <p class="text-center my-10">We will show you how consultancy is done at the highest level with real-life examples</p>
   </div>
-  <div class="shadow-2xl px-10">
+  <div class="transition ease-in-out delay-250 shadow-2xl px-10 hover:-translate-y-1 hover:scale-110 hover:bg-blue-100">
 
     <img src={pic23} class="py-5" alt="ss"></img>
     <h2 class="text-center text-lg font-bold">Procedural Documents</h2>
@@ -88,7 +88,7 @@ const About = () => {
 
   <br />
   <p class="text-center text-white">We are always open to helping new customers, contact us now and arrange a consultation with us</p>
-  <Link to="/Contact"><button class="bg-purple-900 text-white hover:bg-blue-400 font-bold py-2 px-4 mt-3 rounded">Contact</button></Link>
+  <Link to="/Contact"><button class="transition ease-in-out delay-150 bg-purple-900 text-white hover:-translate-y-1 hover:scale-110 hover:bg-blue-400 font-bold py-2 px-4 mt-3 rounded">Contact</button></Link>
 </div>
 </div>
           
