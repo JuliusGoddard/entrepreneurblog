@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import Nav from 'react-bootstrap/Nav';
 import '../styles/styles.scss'
-
+import logo from '../images/logo.png'
 import * as headerStyles from './header.module.scss'
  
 const Header = () => {
@@ -20,16 +20,20 @@ const Header = () => {
     return (
     
         <div>
-        <Nav variant="pills" defaultActiveKey="/home" className='justify-content-end'>
-            <ul className={headerStyles.navList}>
-       <Nav.Item> <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/Index">Home</Link></li></Nav.Item>
-        <Nav.Item><li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/about">About</Link></li></Nav.Item>
-        <Nav.Item><li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/blog">Blog</Link></li></Nav.Item>
-        <Nav.Item><li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/Contact">Contact</Link></li></Nav.Item>
+        <div class="container justify-items-end bg-fuchsia-900 py-2 min-w-full">
+      
+            <ul class="flex flex-row-reverse">
+            <li className={headerStyles.li}><Link class="text-white font-bold  mx-4 align-middle" className={headerStyles.headerlinks}  to="/Contact">Contact</Link></li>
+            <li className={headerStyles.li}><Link class="text-white font-bold  mx-4" className={headerStyles.headerlinks} to="/blog">Blog</Link></li>
+            <li className={headerStyles.li}><Link class="text-white font-bold mx-4" className={headerStyles.headerlinks} to="/about">About</Link></li>
+        <li className={headerStyles.li}><Link class="text-white font-bold mx-4" className={headerStyles.headerlinks} to="/Index">Home</Link></li>
+        <img class="h-20 mr-auto" src={logo} alt="ggg"></img>
+       
+       
+        
+       
         </ul>
-        </Nav>
-
-
+        </div>
 </div>
   
     )
