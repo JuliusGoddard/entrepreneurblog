@@ -2,16 +2,11 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import Head from '../components/head'
-import Button from 'react-bootstrap/Button'
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import { graphql, useStaticQuery } from 'gatsby'
 import * as headerStyles from '../components/header.module.scss'
 import pic02 from '../images/pic02.jpg'
 import '../styles/global.css'
 import pic14 from '../images/pic14.jpg'
-import pic10 from '../images/pic10.jpg'
 import pic12 from '../images/pic12.jpg'
 import pic13 from '../images/pic13.jpg'
 import pic16 from '../images/pic16.jpg'
@@ -39,9 +34,6 @@ const IndexPage = () => {
   }
   `)
 
-  const buttonStyle = {
-    width: '20%'
-  }
 
   const hrstyle = {
     height: '0px',

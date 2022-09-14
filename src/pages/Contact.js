@@ -2,7 +2,6 @@ import React from 'react'
 import Layout from '../components/layout'
 import Head from '../components/head'
 import '../styles/global.css'
-import { Link } from 'gatsby'
 import pic24 from '../images/pic24.webp'
 import { FaRegEnvelope } from 'react-icons/fa'
 import { FaPhoneAlt } from 'react-icons/fa'
@@ -39,7 +38,7 @@ const Contact = () => {
     <hr style={hrstyle} />
 <p class="py-4">The Mendeleev Institute is always open to consultations and new collaborators</p>
           <div class="transition ease-in-out delay-250 flex flex-row py-10 px-10 grid md:grid-cols-2 items-center shadow-2xl hover:-translate-y-1 hover:scale-110">
-            <div><img src={pic24}></img></div>
+            <div><img src={pic24} alt="contact"></img></div>
             <div>
                 <h2 class="font-bold text-2xl py-4">Contact Us</h2>
                 <p class="py-2">
@@ -53,15 +52,15 @@ const Contact = () => {
             </p>
             <h2 class="font-bold text-2xl py-4">Follow Us</h2>
             <p class="inline-flex px-2">
-            <a href="#" class="px-2 h-12 w-12" size={40}>
+            <a href="https://www.facebook.com/groups/179570092154822" class="px-2 h-12 w-12" size={40}>
           <FaFacebookSquare size={30} />
           </a>
           
-          <a href="#" class="px-2 h-12 w-12">
+          <a href="https://www.youtube.com/watch?v=yuSmEXlvpy8" class="px-2 h-12 w-12">
             <FaYoutube  size={30} />
           </a>
         
-          <a href="#" class="px-2 h-12 w-12">
+          <a href="https://twitter.com/search?q=%23mendeleev" class="px-2 h-12 w-12">
           <FaTwitterSquare size={30} />
           </a>
           </p>

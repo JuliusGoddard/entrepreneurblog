@@ -41,15 +41,15 @@ const Footer = () => {
       
         <div class="flex justify-center space-x-4">
          
-          <a href="#">
+          <a href="https://www.facebook.com/groups/179570092154822">
           <FaFacebookSquare class="h-12 color-white" style={{color: "white"}} />
           </a>
           
-          <a href="#">
+          <a href="https://www.youtube.com/watch?v=yuSmEXlvpy8">
             <FaYoutube class="h-12 color-white" style={{color: "white"}} />
           </a>
         
-          <a href="#">
+          <a href="https://twitter.com/search?q=%23mendeleev">
           <FaTwitterSquare class="h-12 color-white" style={{color: "white"}} />
           </a>
         
@@ -58,16 +58,12 @@ const Footer = () => {
     
       <div class="flex justify-around space-x-32">
         <div class="flex flex-col space-y-3 text-white">
-         <Link to="/Index"> <a href="#" class="hover:text-brightRed">Home</a></Link>
-         <Link to="/about">  <a href="#" class="hover:text-brightRed">About</a></Link>
-         <Link to="/blog"> <a href="#" class="hover:text-brightRed">Blog</a></Link>
-         <Link to="/Contact"> <a href="#" class="hover:text-brightRed">Contact</a></Link>
+         <Link to="/Index"> <p class="hover:text-brightRed">Home</p></Link>
+         <Link to="/about">  <p class="hover:text-brightRed">About</p></Link>
+         <Link to="/blog"> <p class="hover:text-brightRed">Blog</p></Link>
+         <Link to="/Contact"> <p class="hover:text-brightRed">Contact</p></Link>
         </div>
-        <div class="flex flex-col space-y-3 text-white">
-          <a href="#" class="hover:text-brightRed">Careers</a>
-          <a href="#" class="hover:text-brightRed">Community</a>
-          <a href="#" class="hover:text-brightRed">Privacy Policy</a>
-        </div>
+    
       </div>
 
       <div class="flex flex-col justify-between">
