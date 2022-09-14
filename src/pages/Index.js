@@ -68,7 +68,7 @@ const IndexPage = () => {
   <div className="outermainbox">
  <div className="mainbox">
           <h1 className={headerStyles.titleHeader}>{data.site.siteMetadata.title}</h1>
-          <Link to="/about"><button class="bg-purple-900 text-white hover:bg-blue-400 font-bold py-2 px-4 mt-3 rounded">Learn More</button></Link>
+          <Link to="/about"><button class="transition ease-in-out delay-150 bg-purple-900 text-white hover:-translate-y-1 hover:scale-110 hover:bg-blue-400 font-bold py-2 px-4 mt-3 rounded">Learn More</button></Link>
        
 </div>
 </div>
@@ -93,20 +93,20 @@ const IndexPage = () => {
 </div>    
 <div class="container py-6 min-w-full">
 <div class="flex flex-row grid md:grid-cols-3 gap-4 h-full py-10">
-  <div class="shadow-2xl px-10">
+  <div class="transition ease-in-out delay-250 shadow-2xl px-10 hover:-translate-y-1 hover:scale-110 hover:bg-blue-100">
    
     <img src={pic02} class="py-5"  alt="ss"></img>
     <h2 class="text-center text-lg font-bold">Entrepreneurial skill</h2>
   <p class="text-center my-10">Our teaching will give you a fundamental skillset required to start your own firm</p>
   </div>
-  <div class="shadow-2xl px-10">
+  <div class="transition ease-in-out delay-250 shadow-2xl px-10 hover:-translate-y-1 hover:scale-110 hover:bg-blue-100">
 
   
     <img src={pic12} class="py-5" alt="ss"></img>
     <h2 class="text-center text-lg font-bold">Consultancy Training</h2>
   <p class="text-center my-10">We will show you how consultancy is done at the highest level with real-life examples</p>
   </div>
-  <div class="shadow-2xl px-10">
+  <div class="transition ease-in-out delay-250 shadow-2xl px-10 hover:-translate-y-1 hover:scale-110 hover:bg-blue-100">
 
     <img src={pic13} class="py-5" alt="ss"></img>
     <h2 class="text-center text-lg font-bold">Insight into BioPharma</h2>
@@ -122,7 +122,7 @@ const IndexPage = () => {
 
   <br />
   <p class="text-center text-white">Kickstart your career in BioPharma with the Mendeleev Institute right now</p>
-  <Link to="/Contact"><button class="bg-purple-900 text-white hover:bg-blue-400 font-bold py-2 px-4 mt-3 rounded">Contact</button></Link>
+  <Link to="/Contact"><button class="transition ease-in-out delay-150 bg-purple-900 hover:-translate-y-1 hover:scale-110 text-white hover:bg-blue-400 font-bold py-2 px-4 mt-3 rounded">Contact</button></Link>
 </div>
 </div>
 <div class="container py-10 px-4 bg-white min-w-full">

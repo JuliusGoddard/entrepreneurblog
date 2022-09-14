@@ -33,8 +33,14 @@ const Header = () => {
         
        
         </ul>
+<<<<<<< HEAD
         </div>
 </div>
+=======
+        </Nav>
+
+     </div>
+>>>>>>> 8534937e3a03f1d8b505cd7afa5d3dc3d428b595
   
     )
 }
